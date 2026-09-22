@@ -9,6 +9,16 @@ body {
     background-color: #8067F1;
 }
 
+#example {
+    max-width: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+
+#example-img {
+    object-fit: contain;
+}
+
 .contents {
     display: flex;
     max-width: 1000px;
