@@ -9,14 +9,18 @@ body {
     background-color: #8067F1;
 }
 
-#example {
-    max-width: 1000px;
-    align-items: center;
-    justify-content: center;
-}
-
 #example-img {
     object-fit: contain;
+    max-width: 1000px;
+}
+
+#example-text {
+    max-width: 1000px;
+}
+
+#homepage-container {
+    display: grid;
+    justify-content: center;
 }
 
 .contents {
