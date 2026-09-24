@@ -20,7 +20,13 @@
         <p id="example-text">Upload an image from your computer that has Japanese text. It will be turned into text and you will can see the definitions for each word when you hover your mouse over it.</p>
         <img src="example.png" id="example-img" alt="Example of an image the user can upload" width="1000" height="400">
         <div id="image-buttons">
-            <button class>Upload Image</button>
+            <form name="upload-form">
+                <div>
+                    <label for="file">Choose a file to upload</label>
+                    <input type="file" id="uploaded-image" name="uploaded-image" accept="image/png, image/jpeg" />
+                    <input type="submit" value="Upload Image" />
+                </div>
+            </form>
             <button>Save</button>
         </div>
         <div id="card">
@@ -39,5 +45,7 @@
             </div>
         </div>
     </div>
+
+    <script src="homepage.js"></script>
 </body>
 </html>
