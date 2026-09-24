@@ -23,6 +23,13 @@ body {
     justify-content: center;
 }
 
+#image-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
 .contents {
     display: flex;
     max-width: 1000px;
