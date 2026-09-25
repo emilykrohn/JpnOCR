@@ -90,7 +90,7 @@ button {
     color: purple;
 }
 
-.definition-title {
+#definition-title {
     display: flex;
     justify-content: space-between;
     width: 600px;
