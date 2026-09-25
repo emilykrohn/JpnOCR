@@ -70,6 +70,26 @@ button {
     border: 4px solid #290088;
 }
 
+.red-text {
+    color: red;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.orange-text {
+    color: orange;
+}
+
+.green-text {
+    color: green;
+}
+
+.purple-text {
+    color: purple;
+}
+
 .definition-title {
     display: flex;
     justify-content: space-between;
