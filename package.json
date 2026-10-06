@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "build": "webpack"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.111.1",
+    "webpack-cli": "^7.2.3"
+  }
+}
