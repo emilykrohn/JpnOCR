@@ -2,7 +2,7 @@ import { createClient } from '@supabase/supabase-js'
 
 const supabase = createClient('https://yvralrlmgjxsoxzumcrc.supabase.co', 'sb_publishable_VuIsDw8aGfdnbKqWjuCT5Q_-lG-iJqY')
 
-let button = document.getElementById("sign-up");
+let button = document.getElementById("signUp");
 button.addEventListener("click", async function(event){
     console.log("done");
     const { data, error } = await supabase.auth.signUp({
