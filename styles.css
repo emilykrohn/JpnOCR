@@ -112,3 +112,27 @@ button {
     display: flex;
     justify-content: center;
 }
+
+#sign-up {
+    border-style: solid;
+    border-radius: 10px;
+    width: 50%;
+    padding: 20px;
+}
+
+#sign-up-header {
+    text-align: center;
+}
+
+#sign-up-text {
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-size: 15px;
+}
