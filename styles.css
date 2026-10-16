@@ -151,3 +151,7 @@ input[type="text"] {
 input[type="submit"] {
     border-radius: 10px;
 }
+
+#input {
+    margin: 15px 0px;
+}
