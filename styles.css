@@ -116,7 +116,8 @@ button {
 #sign-up {
     border-style: solid;
     border-radius: 10px;
-    width: 50%;
+    width: 550px;
+    height: 500px;
     padding: 20px;
 }
 
