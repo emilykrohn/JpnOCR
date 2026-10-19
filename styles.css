@@ -50,8 +50,9 @@ button {
 }
 
 #card-text {
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    max-width: 607px;
 }
 
 .card-word {
