@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="navbar">
+        <div class="contents">
+            <p class="navbar-text">JpnOCR</p>
+            <div class="account-buttons">
+                <a href="index.html">
+                    <button id="home">Home</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="form-container">
+        <div id="sign-up">
+            <h1 id="sign-up-header">Sign up</h1>
+            <p id="sign-up-text">Already have an account? Login</p>
+            <div id="form">
+                <form id="sign-up-form" action="index.html">
+                    <div id="input">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="First Name"><br>
+                    </div>
+                    <div id="input">
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email" placeholder="example@gmail.com"><br>
+                    </div>
+                    <div id="input">
+                        <label for="password">Password:</label><br>
+                        <input type="text" id="password" name="password" placeholder="Password"><br>
+                    </div>
+                    <input type="submit" value="Sign up">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="dist/main.js"></script>
+</body>
+</html>
