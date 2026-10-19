@@ -101,6 +101,10 @@ button {
     width: 600px;
 }
 
+#definition {
+    max-width: 600px;
+}
+
 .contents {
     display: flex;
     max-width: 1000px;
