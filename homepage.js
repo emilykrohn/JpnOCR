@@ -1,5 +1,7 @@
 document.forms["upload-form"].addEventListener("submit", async (e) => {
     e.preventDefault();
+    const cardText = document.getElementById("card-text");
+    cardText.replaceChildren();
     const file = document.getElementById("uploaded-image").files[0];
     if (!file) return;
     const img = document.getElementById("card-img");
@@ -15,7 +17,7 @@ document.forms["upload-form"].addEventListener("submit", async (e) => {
         }
         var path = tokenizer.tokenize(cleanText);
         console.log(path);
-        
+
         for (const word of path) {
             const newWord = document.createElement('span');
             const pos = Object.entries(word)[4][1];
