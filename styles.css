@@ -64,6 +64,7 @@ button {
 #card {
     display: grid;
     justify-content: center;
+    margin: 10px;
 }
 
 #content {
