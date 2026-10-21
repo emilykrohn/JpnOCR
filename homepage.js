@@ -1,3 +1,5 @@
+var path = "";
+
 document.forms["upload-form"].addEventListener("submit", async (e) => {
     e.preventDefault();
     const cardText = document.getElementById("card-text");
@@ -15,7 +17,7 @@ document.forms["upload-form"].addEventListener("submit", async (e) => {
             console.error(err);
             return;
         }
-        var path = tokenizer.tokenize(cleanText);
+        path = tokenizer.tokenize(cleanText);
         console.log(path);
 
         for (const word of path) {
@@ -66,6 +68,13 @@ document.addEventListener('mousemove', e => {
     const element = document.elementFromPoint(e.clientX, e.clientY);
     if (element.nodeName && element.nodeName.toLowerCase() === 'span' && element.innerHTML !== current_word) {
         current_word = element.innerHTML;
+        for (const word of path) {
+            if (Object.entries(word)[10][1] === current_word) {
+                const pos = Object.entries(word)[4][1];
+                document.getElementById("card-word").textContent = current_word;
+                document.getElementById("card-pos").textContent = pos;
+            }
+        }
         displayDefinition();
     }
 })
