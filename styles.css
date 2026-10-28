@@ -3,8 +3,19 @@ body {
     margin: 0;
 }
 
-button, .button {
+button{
     border-radius: 40px;
+    padding: 8px 18px;
+    background-color: #6348FA;
+    border-color: #290088;
+    border-width: 4px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px 8px black;
+}
+
+.button {
     padding: 8px 18px;
     background-color: #6348FA;
     border-color: #290088;
@@ -118,6 +129,10 @@ button, .button {
     color: white;
 }
 
+#image-label {
+    font-size: 15px;
+}
+
 #form-container {
     display: flex;
     justify-content: center;
@@ -171,7 +186,20 @@ input[type="text"] {
 }
 
 input[type="submit"] {
-    border-radius: 10px;
+    border-radius: 40px;
+}
+
+input[type="file"]::file-selector-button {
+    margin: 10px;
+    border-radius: 40px;
+    padding: 8px 18px;
+    background-color: #6348FA;
+    border-color: #290088;
+    border-width: 4px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px 8px black;
 }
 
 #input {
