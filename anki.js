@@ -29,7 +29,16 @@ function invoke(action, version, params={}) {
 }
 
 async function main() {
-    console.log("Connected to Anki");
+    console.log("Connected to Anki...");
+    const result = await invoke('findCards', 6, {query: 'deck:current'});
+    const result2 = await invoke('cardsInfo', 6, {cards: result, noteFields: ["Definitions", "Target Word"]});
+    const cardInfo = result2.map(c => ({
+        cardId: c.cardId,
+        word: c.fields["Target Word"].value,
+        definition: c.fields["Definitions"].value,
+    }));
+    console.log(cardInfo);
+    return cardInfo;
 }
 document.getElementById("connect-to-anki").addEventListener("click", async () => {
     const status = document.getElementById("anki-status");
