@@ -88,23 +88,23 @@ button{
 }
 
 .red-text {
-    color: red;
+    color: rgba(238, 33, 33, 0.76);
 }
 
 .blue-text {
-    color: blue;
+    color: rgb(78, 78, 247);
 }
 
 .orange-text {
-    color: orange;
+    color: rgba(254, 176, 30, 0.935);
 }
 
 .green-text {
-    color: green;
+    color: rgb(8, 135, 8);
 }
 
 .purple-text {
-    color: purple;
+    color: rgb(116, 0, 116);
 }
 
 #definition-title {
