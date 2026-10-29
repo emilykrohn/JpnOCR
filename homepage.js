@@ -66,7 +66,7 @@ let current_word = "";
 
 document.addEventListener('mousemove', e => {
     const element = document.elementFromPoint(e.clientX, e.clientY);
-    if (element.nodeName && element.nodeName.toLowerCase() === 'span' && element.innerHTML !== current_word) {
+    if (element && element.nodeName.toLowerCase() === 'span' && element.innerHTML !== current_word) {
         current_word = element.innerHTML;
         for (const word of path) {
             if (Object.entries(word)[10][1] === current_word) {

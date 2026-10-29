@@ -48,10 +48,25 @@
                 <p id="definition"></p>
             </div>
         </div>
+        <button id="connect-to-anki">Connect to Anki</button>
+        <div id="card">
+            <div id="content">
+                <div id="definition-title">
+                    <p id="card-word">Total Number of Unique Kanji</p>
+                    <p id="anki-status">Not Connected to Anki</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="navbar">
+        <div class="contents">
+            <p class="navbar-text">JpnOCR</p>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="https://cdn.jsdelivr.net/npm/kuromoji@0.1.2/build/kuromoji.js"></script>
     <script src='https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js'></script>
+    <script src="anki.js"></script>
     <script type="module" src="homepage.js"></script>
 </body>
 </html>
