@@ -64,11 +64,27 @@ async function main() {
         "ラ", "リ", "ル", "レ", "ロ",
         "ワ", "ヲ", "ン", "ッ", "ャ", "ュ", "ョ"
     ];
-    const kanji = new Set();
+    // [[kanji, [word, definition], [word, definition]], [kanji, [word, definition]]]
+    const kanji = [];
     for (const card of cardInfo) {
+        // Gets each character in a word
         for (const char of card["word"]) {
+            // Checks if the character is a kanji character
             if (!notKanji.includes(char)) {
-                kanji.add(char);
+                let isInKanjiArray = false;
+                // Checks if the kanji character is already in the kanji array
+                for (const c of kanji) {
+                    // If the kanji character is already in the kanji array, add the word and definition to the kanji array
+                    if (char === c[0]) {
+                        c.push([card["word"], card["definition"]]);
+                        isInKanjiArray = true;
+                        break;
+                    }
+                }
+                // If the kanji character is not in the kanji array, add it to the kanji array with the word and definition
+                if (!isInKanjiArray) {
+                    kanji.push([char, [card["word"], card["definition"]]]);
+                }
             }
         }
     }
