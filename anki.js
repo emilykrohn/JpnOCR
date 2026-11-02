@@ -64,15 +64,15 @@ async function main() {
         "ラ", "リ", "ル", "レ", "ロ",
         "ワ", "ヲ", "ン", "ッ", "ャ", "ュ", "ョ"
     ];
+    const kanji = new Set();
     for (const card of cardInfo) {
         for (const char of card["word"]) {
             if (!notKanji.includes(char)) {
-                console.log(char);
+                kanji.add(char);
             }
         }
     }
-    console.log(cardInfo[0]["word"]);
-    return cardInfo;
+    console.log(kanji);
 }
 document.getElementById("connect-to-anki").addEventListener("click", async () => {
     const status = document.getElementById("anki-status");
