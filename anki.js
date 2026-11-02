@@ -88,6 +88,8 @@ async function main() {
             }
         }
     }
+    const totalKanji = document.getElementById("total-kanji");
+    totalKanji.textContent = "Total Number of Unique Kanji: " + kanji.length;
     console.log(kanji);
 }
 document.getElementById("connect-to-anki").addEventListener("click", async () => {
