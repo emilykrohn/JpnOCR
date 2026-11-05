@@ -3,9 +3,14 @@
     "build": "webpack"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.117.2"
+    "@supabase/supabase-js": "^2.117.2",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.29.13",
+    "@babel/preset-react": "^7.29.7",
+    "babel-loader": "^9.2.1",
     "webpack": "^5.111.1",
     "webpack-cli": "^7.2.3"
   }

@@ -1,3 +1,9 @@
+import { createRoot } from "react-dom/client";
+
+createRoot(document.getElementById("root")).render(
+    <h1>Welcome to JpnOCR</h1>
+);
+
 var path = "";
 
 document.forms["upload-form"].addEventListener("submit", async (e) => {
