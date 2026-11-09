@@ -24,7 +24,7 @@ function OCR() {
             <p id="example-text">Upload an image from your computer that has Japanese text. It will be turned into text and you will can see the definitions for each word when you hover your mouse over it.</p>
             <img src="example.png" id="example-img" alt="Example of an image the user can upload" width="1000" height="400" />
             <div id="image-buttons">
-                <form name="upload-form">
+                <form name="upload-form" onSubmit={handleFormSubmit}>
                     <div>
                         <label id="image-label" for="file">Choose a file to upload</label>
                         <input type="file" id="uploaded-image" name="uploaded-image" accept="image/png, image/jpeg" />
@@ -96,7 +96,7 @@ createRoot(document.getElementById("root")).render(
 
 var path = "";
 
-document.forms["upload-form"].addEventListener("submit", async (e) => {
+async function handleFormSubmit(e) {
     e.preventDefault();
     const cardText = document.getElementById("card-text");
     cardText.replaceChildren();
@@ -136,7 +136,7 @@ document.forms["upload-form"].addEventListener("submit", async (e) => {
             document.getElementById("card-text").appendChild(newWord);
         }
     });
-});
+};
 
 const res = await fetch("./jmdict-eng-common-3.6.2.json");
 const json = await res.json();
