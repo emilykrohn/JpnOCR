@@ -1,7 +1,70 @@
 import { createRoot } from "react-dom/client";
 
+function App() {
+    return (
+        <>
+            <div id="navbar">
+                <div class="contents">
+                    <p class="navbar-text">JpnOCR</p>
+                    <div class="account-buttons">
+                        <a href="login.html">
+                            <button id="login-navbar">Login</button>
+                        </a>
+                        <a href="sign-up.html">
+                            <button id="sign-up-navbar">Sign Up</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="homepage-container">
+                <p id="example-text">Upload an image from your computer that has Japanese text. It will be turned into text and you will can see the definitions for each word when you hover your mouse over it.</p>
+                <img src="example.png" id="example-img" alt="Example of an image the user can upload" width="1000" height="400" />
+                <div id="image-buttons">
+                    <form name="upload-form">
+                        <div>
+                            <label id="image-label" for="file">Choose a file to upload</label>
+                            <input type="file" id="uploaded-image" name="uploaded-image" accept="image/png, image/jpeg" />
+                            <input class="button" type="submit" value="Upload Image" />
+                        </div>
+                    </form>
+                    <button>Save</button>
+                </div>
+                <div id="card">
+                    <div id="content">
+                        <img src="upload-image.png" id="card-img" alt="Sample image" width="600" height="350" />
+                        <div id="card-text"></div>
+                    </div>
+                </div>
+                <div id="card">
+                    <div id="content">
+                        <div id="definition-title">
+                            <p id="card-word">Word</p>
+                            <p id="card-pos">Part of Speech</p>
+                        </div>
+                        <p id="definition"></p>
+                    </div>
+                </div>
+                <button id="connect-to-anki">Connect to Anki</button>
+                <div id="card">
+                    <div id="content">
+                        <div id="definition-title">
+                            <p id="total-kanji">Total Number of Unique Kanji</p>
+                            <p id="anki-status">Not Connected to Anki</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="navbar">
+                <div class="contents">
+                    <p class="navbar-text">JpnOCR</p>
+                </div>
+            </div>
+        </>
+    );
+}
+
 createRoot(document.getElementById("root")).render(
-    <h1>Welcome to JpnOCR</h1>
+    <App />
 );
 
 var path = "";
