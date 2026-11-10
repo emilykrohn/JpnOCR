@@ -1,4 +1,5 @@
 import { createRoot } from "react-dom/client";
+import { connectToAnki, notKanji } from "./anki.js";
 
 function Navbar() {
     return (
@@ -55,7 +56,7 @@ function OCR() {
 function Anki() {
     return (
         <>
-            <button id="connect-to-anki">Connect to Anki</button>
+            <button id="connect-to-anki" onClick={connectToAnki}>Connect to Anki</button>
             <div id="card">
                 <div id="content">
                     <div id="definition-title">
